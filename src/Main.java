@@ -35,7 +35,7 @@ public class Main {
                             System.out.println("On guess number:"+noGuess);
                             game.setKilledShip();
                         }
-                        game.setHit(i,currentHit);
+                        game.setHit(i,currentHit,j);
                         return;
                     }
                 }

@@ -22,4 +22,8 @@ public class Ship {
     public void setHit(int hit) {
         this.hit = hit;
     }
+
+    public void deletePos(int hitPos){
+        this.pos[hitPos]=100;
+    }
 }

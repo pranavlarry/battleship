@@ -110,8 +110,9 @@ public class Game {
         return this.ship.get(i).getHit();
     }
 
-    public void setHit(int i,int hit){
+    public void setHit(int i,int hit,int pos){
         this.ship.get(i).setHit(hit);
+        this.ship.get(i).deletePos(pos);
     }
 
     public int[] getPosition(int i) {
