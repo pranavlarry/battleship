@@ -6,8 +6,6 @@ public class Test {
     private static String guess,expectedResult;
     private static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
-
-
         for(int i=0;i<3;i++){
             int[] location=new int[3];
             String loc=new String();

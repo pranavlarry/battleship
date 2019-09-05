@@ -8,9 +8,8 @@ public class Main {
     static Game game=new Game();
     public static void main(String[] args) {
         int numberGuess;
-//        Arrays.fill(displayGame, '0');
         game.setLocation();
-        game.display();
+//        game.display();    //to display the actual locations
         boolean valid;
         game.dis(100,'-');
         while(game.getKilledShip()!=3){
@@ -34,9 +33,5 @@ public class Main {
         }
 
     }
-
-
-
-    //Grid display
 
 }
