@@ -6,7 +6,7 @@ public class Game {
 
     public Game() {
         this.ship = new ArrayList<>();
-        this.killedShip = killedShip;
+        this.killedShip = 0;
     }
 
     public void setLocation(){
@@ -17,7 +17,6 @@ public class Game {
             while(flag){
                 int[] loc=new int[3];
                 posDir=randomPos();
-                loc[0]=0;loc[1]=0;loc[2]=0;
                 if(posDir[0]==0 && posDir[2]==0){
                     //vertical 1st row
                     loc[0]=(posDir[0]*10)+posDir[1];
@@ -57,7 +56,7 @@ public class Game {
 
                 flag=hadShip(loc);
                 if(flag==false){
-                    System.out.println("Saving location of:"+i);
+//                    System.out.println("Saving location of:"+i);
                     add(loc);
                 }
             }

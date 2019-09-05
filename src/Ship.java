@@ -11,9 +11,6 @@ public class Ship {
         return pos;
     }
 
-//    public void setPosition(int[] position) {
-//        this.pos = position;
-//    }
 
     public int getHit() {
         return hit;
