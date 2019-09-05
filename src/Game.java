@@ -2,11 +2,14 @@ import java.util.*;
 public class Game {
     private ArrayList<Ship> ship;
     private int killedShip;
+    private char[][] displayGame=new char[8][8];
     int[] test=new int[3];
 
     public Game() {
         this.ship = new ArrayList<>();
         this.killedShip = 0;
+        for (char[] row: this.displayGame)
+            Arrays.fill(row, '-');
     }
 
     public void setLocation(){
@@ -124,5 +127,52 @@ public class Game {
 
     public int getKilledShip(){
         return this.killedShip;
+    }
+
+    public void fire(int guess,int noGuess){
+        for(int i=0;i<3;i++){
+            int currentHit=getHit(i);
+            if(currentHit!=3){
+                int[] pos=getPosition(i);
+                for(int j=0;j<3;j++){
+                    if(pos[j]==guess){
+                        System.out.println("Its a hit!!!");
+                        dis(guess,'x');
+                        currentHit+=1;
+                        if(currentHit==3){
+                            System.out.println("Ship killed!!");
+                            System.out.println("On guess number:"+noGuess);
+                            setKilledShip();
+                        }
+                        setHit(i,currentHit,j);
+                        return;
+                    }
+                }
+            }
+
+        }
+        System.out.println("YOU MISSED ;-)");
+        dis(guess,'o');
+    }
+
+    public void dis(int guess,char ch){
+        if(guess!=100){
+            int row=guess/10;
+            int col=guess%10;
+            displayGame[row][col]=ch;
+        }
+        System.out.println(" 'x' will be marked as hit, 'o' will be marked as miss");
+        System.out.println("  0 1 2 3 4 5 6 7 ");
+        for(int i=0;i<8;i++){
+            char x='A';
+            x+=i;
+            for (int j=0;j<8;j++){
+                if(j==0){
+                    System.out.print(x +" ");
+                }
+                System.out.print(displayGame[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 }

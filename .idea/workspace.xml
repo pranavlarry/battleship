@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca0de80-b276-4774-8a47-80c252187242" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contacts/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contacts/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contacts/.idea/modules.xml" afterDir="false" />
@@ -12,14 +11,9 @@
       <change afterPath="$PROJECT_DIR$/../contacts/src/Contact.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contacts/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../contacts/src/MobilePhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battleship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/alienship/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/alienship/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/alienship/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/alienship/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/alienship/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/alienship/Ship.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +36,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="252">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2197#2198#0" expanded="true" />
+                <element signature="e#2257#2258#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,17 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="83" column="5" selection-start-line="80" selection-start-column="31" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="-153">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding>
+                <element signature="method#Game#0;class#Game#0" />
                 <element signature="method#setLocation#0;class#Game#0" />
                 <element signature="method#hadShip#0;class#Game#0" />
                 <element signature="method#add#0;class#Game#0" />
                 <element signature="method#display#0;class#Game#0" />
                 <element signature="method#randomPos#0;class#Game#0" />
                 <element signature="method#setHit#0;class#Game#0" />
-                <element signature="e#3440#3441#0" expanded="true" />
-                <element signature="e#3484#3485#0" expanded="true" />
+                <element signature="method#dis#0;class#Game#0" />
               </folding>
             </state>
           </provider>
@@ -97,16 +96,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>new</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Ship.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
       </list>
     </option>
   </component>
@@ -144,7 +148,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567664520166" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567669316754" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RunDashboard">
@@ -159,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="alienship" />
@@ -167,8 +171,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="alienship" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -203,7 +215,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34852546" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44101876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -219,6 +231,33 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" />
+            <element signature="method#setLocation#0;class#Game#0" />
+            <element signature="method#hadShip#0;class#Game#0" />
+            <element signature="method#add#0;class#Game#0" />
+            <element signature="method#display#0;class#Game#0" />
+            <element signature="method#randomPos#0;class#Game#0" />
+            <element signature="method#setHit#0;class#Game#0" />
+            <element signature="method#dis#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -235,36 +274,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="83" column="5" selection-start-line="80" selection-start-column="31" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="method#setLocation#0;class#Game#0" />
-            <element signature="method#hadShip#0;class#Game#0" />
-            <element signature="method#add#0;class#Game#0" />
-            <element signature="method#display#0;class#Game#0" />
-            <element signature="method#randomPos#0;class#Game#0" />
-            <element signature="method#setHit#0;class#Game#0" />
-            <element signature="e#3440#3441#0" expanded="true" />
-            <element signature="e#3484#3485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="252">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
           </folding>
         </state>
       </provider>
