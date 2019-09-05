@@ -61,6 +61,6 @@ public class Test {
     }
 
     public static boolean check(String ip){
-        return Pattern.matches("[a-h|A-H][0-8]", ip);
+        return Pattern.matches("[a-h|A-H][0-7]", ip);
     }
 }

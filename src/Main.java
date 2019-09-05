@@ -15,7 +15,7 @@ public class Main {
         while(game.getKilledShip()!=3){
             System.out.println("Enter the coordinate in row column formate(RC):");
             guess=scanner.nextLine();
-            valid = Pattern.matches("[a-h|A-H][0-8]", guess);
+            valid = Pattern.matches("[a-h|A-H][0-7]", guess);
             if(valid){
                 String[] ipString=guess.split("(?!^)");
                 ipString[0]=ipString[0].toUpperCase();
