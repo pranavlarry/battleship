@@ -23,14 +23,14 @@ public class Test {
             }
             game.add(location);
         }
-        while(true){
+        while(true && game.getKilledShip()!=3){
             System.out.println("Enter 'q' to quit testing");
             System.out.println("Enter guess: ");
             guess=scanner.nextLine();
             if(guess.equals("q")){
                 break;
             }
-            System.out.println("Enter expected output (HIT/HIT and KILL/MISSED): ");
+            System.out.println("Enter expected output ('HIT' / 'HIT & KILL' / 'MISSED'): ");
             expectedResult=scanner.nextLine();
             guessTester(guess,expectedResult);
         }
@@ -43,8 +43,10 @@ public class Test {
             int numberGuess=convertor(guess);
             noGuess+=1;
             System.out.println("Expected result on guess : '"+guess+"' is : '"+expectedResult+"' on guess number : "+noGuess);
-            System.out.println("Output from program is result is the following:-");
+            System.out.println("Output from program is the following:-");
+            System.out.println("**************************************");
             game.fire(numberGuess,noGuess);
+            System.out.println("**************************************");
         }
         else {
             System.out.println("Invalid input try again!!");
