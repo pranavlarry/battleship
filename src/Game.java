@@ -66,7 +66,7 @@ public class Game {
         }
     }
 
-    private boolean hadShip(int[] loc){
+    public boolean hadShip(int[] loc){
         int[] checkLoc;
         for(int i=0;i<ship.size();i++){
             checkLoc=ship.get(i).getPosition();
@@ -106,6 +106,10 @@ public class Game {
         pos[1]=col;
         pos[2]= random.nextInt(2);
         return pos;
+    }
+
+    public char[][] getDisplayGame() {
+        return displayGame;
     }
 
     public int getHit(int i){

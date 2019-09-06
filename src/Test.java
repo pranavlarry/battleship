@@ -6,6 +6,7 @@ public class Test {
     private static String guess,expectedResult;
     private static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
+        boolean valid2=true;
         for(int i=0;i<3;i++){
             int[] location=new int[3];
             String loc=new String();
@@ -15,6 +16,7 @@ public class Test {
                     System.out.println("Enter location no:"+(j+1)+" of ship "+(i+1)+":");
                     loc=scanner.nextLine();
                     valid=check(loc);
+
                     if(!valid){
                         System.out.println("Invalid location enter location in A1,B1 etc format!!");
                     }
@@ -22,6 +24,7 @@ public class Test {
                 location[j]=convertor(loc);
             }
             game.add(location);
+
         }
         while(true){
             System.out.println("Enter 'q' to quit testing");
@@ -42,7 +45,7 @@ public class Test {
         if(valid){
             int numberGuess=convertor(guess);
             noGuess+=1;
-            System.out.println("Expected result on guess : "+guess+" is : "+expectedResult+" on guess number : "+noGuess);
+            System.out.println("Expected result on guess : '"+guess+"' is : '"+expectedResult+"' on guess number : "+noGuess);
             System.out.println("Output from program is result is the following:-");
             game.fire(numberGuess,noGuess);
         }
