@@ -20,6 +20,7 @@ public class Ship {
         this.hit = hit;
     }
 
+    //change the location which is hitted
     public void deletePos(int hitPos){
         this.pos[hitPos]=100;
     }

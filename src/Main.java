@@ -5,6 +5,7 @@ public class Main {
     private static String guess;
     private static int noGuess;
     static Game game=new Game();
+
     public static void main(String[] args) {
         int numberGuess;
         game.setLocation();
@@ -40,6 +41,8 @@ public class Main {
         }
 
     }
+
+    //check if the input is already tried
     private static boolean clickedCheck(int row,int col){
         if(game.getDisplayGame()[row][col]=='-'){
             return true;

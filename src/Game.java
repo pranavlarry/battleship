@@ -12,6 +12,7 @@ public class Game {
             Arrays.fill(row, '-');
     }
 
+    //set locations of ship
     public void setLocation(){
         int[] posDir;
         boolean flag;
@@ -59,13 +60,13 @@ public class Game {
 
                 flag=hadShip(loc);
                 if(flag==false){
-//                    System.out.println("Saving location of:"+i);
                     add(loc);
                 }
             }
         }
     }
 
+    //check if the location is already occupied
     public boolean hadShip(int[] loc){
         int[] checkLoc;
         for(int i=0;i<ship.size();i++){
@@ -81,11 +82,13 @@ public class Game {
         return false;
     }
 
+    //add new ship with locations
     public void add(int[] test){
         Ship obj=new Ship(test);
         ship.add(obj);
     }
 
+    //to display the locations of 3 ships:testing
     public void display(){
         for(int i=0;i<ship.size();i++) {
             System.out.println("Display"+i);
@@ -96,6 +99,7 @@ public class Game {
         }
     }
 
+    //generate random numbers for location and direction
     private int[] randomPos() {
         Random random = new Random();
         int rand = random.nextInt(64);
@@ -108,6 +112,7 @@ public class Game {
         return pos;
     }
 
+    //getters
     public char[][] getDisplayGame() {
         return displayGame;
     }
@@ -116,23 +121,25 @@ public class Game {
         return this.ship.get(i).getHit();
     }
 
-    public void setHit(int i,int hit,int pos){
-        this.ship.get(i).setHit(hit);
-        this.ship.get(i).deletePos(pos);
+    public int getKilledShip(){
+        return this.killedShip;
     }
 
     public int[] getPosition(int i) {
         return this.ship.get(i).getPosition();
     }
 
+    //setters
+    public void setHit(int i,int hit,int pos){
+        this.ship.get(i).setHit(hit);
+        this.ship.get(i).deletePos(pos);
+    }
+
     public void setKilledShip() {
         this.killedShip=this.killedShip+1 ;
     }
 
-    public int getKilledShip(){
-        return this.killedShip;
-    }
-
+    //check if the guessed location is hit or miss
     public void fire(int guess,int noGuess){
         for(int i=0;i<3;i++){
             int currentHit=getHit(i);
@@ -159,6 +166,7 @@ public class Game {
         dis(guess,'o');
     }
 
+    //display the gird and current status
     public void dis(int guess,char ch){
         if(guess!=100){
             int row=guess/10;
