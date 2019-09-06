@@ -6,25 +6,22 @@ public class Test {
     private static String guess,expectedResult;
     private static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
-        boolean valid2=true;
         for(int i=0;i<3;i++){
-            int[] location=new int[3];
-            String loc=new String();
+            int[] location={0,0,0};
+            String loc;
             for(int j=0;j<3;j++){
                 boolean valid=false;
                 while(!valid){
                     System.out.println("Enter location no:"+(j+1)+" of ship "+(i+1)+":");
                     loc=scanner.nextLine();
-                    valid=check(loc);
-
+                    location[j]=convertor(loc);
+                    valid=check(loc) && !game.hadShip(location);
                     if(!valid){
-                        System.out.println("Invalid location enter location in A1,B1 etc format!!");
+                        System.out.println("Invalid location enter location in A1,B1 etc format or a ship is already place here!!");
                     }
                 }
-                location[j]=convertor(loc);
             }
             game.add(location);
-
         }
         while(true){
             System.out.println("Enter 'q' to quit testing");
